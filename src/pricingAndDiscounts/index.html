@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precios & Descuentos</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      width: 20vw;
+      max-width: 22vw;
+      height: 40vh;
+      background-color: #0093e9;
+      background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+      border-radius: 2vw;
+      margin-top: 15vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 1vw;
+      padding-right: 1vw;
+    }
+    .title {
+      margin-top: 3vh;
+      color: steelblue;
+      font-size: 2.5vw;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    p {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+      margin-bottom: 0.6vh;
+      font-size: 1.7vh;
+    }
+    .form {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 3vh;
+    }
+    .img {
+      width: 15vw;
+      height: 15vh;
+      margin-top: 4vh;
+    }
+    input {
+      width: 4vw;
+      border-radius: 15px;
+      padding-left: 1vw;
+      padding-right: 0.5vw;
+      padding-top: 0.2vh;
+      padding-bottom: 0.1vh;
+      margin-left: 1vw;
+    }
+    .inputDiscount {
+      width: 2vw;
+    }
+    #btnCalcular {
+      border-radius: 15px;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      padding-top: 0.5vh;
+      padding-bottom: 0.5vh;
+      margin-top: 2vh;
+    }
+    .finalPrice {
+      margin-top: 1vh;
+      font-weight: 400;
+      font-size: 1.5vw;
+    }
+  </style>
+  <script src="./pricingAndDiscounts.js"></script>
+
+  <body>
+    <header>
+      <h1 class="title">Precios & Descuentos</h1>
+    </header>
+    <div class="card">
+      <img class="img" src="/imgs/calc.svg" />
+      <form class="form">
+        <p>
+          <label for="inputPrice">Ingrese el precio: </label>
+          <input type="number" id="inputPrice" />
+        </p>
+        <p>
+          <label for="inputDiscount">Ingrese el % de descuento: </label>
+          <input class="inputDiscount" type="number" id="inputDiscount" />
+        </p>
+        <button id="btnCalcular" type="button" onclick="calcularDescuento()">
+          Calcular
+        </button>
+        <p class="finalPrice">
+          <label id="lblFinalPrice">Precio final: </label>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
