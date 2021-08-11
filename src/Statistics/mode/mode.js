@@ -1,10 +1,10 @@
-numbers = [2, 2, 2, 5, 4, 4, 4, 2, 5, 1, 10];
+numbers = [2, 2, 2, 5, 4, 4, 4, 2, 5, 1, , 1, 1, 1, 1, 10];
 
 const objNumbers = {};
 
 numbers.map((elemento) => {
   if (objNumbers[elemento]) {
-    objNumbers[elemento] += 1;
+    objNumbers[elemento]++;
   } else {
     objNumbers[elemento] = 1;
   }
