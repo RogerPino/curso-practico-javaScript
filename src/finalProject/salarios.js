@@ -6,7 +6,7 @@ colombia.push({
 });
 colombia.push({
   name: "Nicolas",
-  salary: 15000,
+  salary: 150000,
 });
 colombia.push({
   name: "Jimmy",
@@ -40,19 +40,19 @@ colombia.push({
   name: "Daniela",
   salary: 6500,
 });
-colombia.push({
-  name: "Laura",
-  salary: 2000,
-});
-colombia.push({
-  name: "Sofia",
-  salary: 11000,
-});
-colombia.push({
-  name: "Felipe",
-  salary: 7100,
-});
-colombia.push({
-  name: "Camila",
-  salary: 11000,
-});
+// colombia.push({
+//   name: "Laura",
+//   salary: 2000,
+// });
+// colombia.push({
+//   name: "Sofia",
+//   salary: 11000,
+// });
+// colombia.push({
+//   name: "Felipe",
+//   salary: 7100,
+// });
+// colombia.push({
+//   name: "Camila",
+//   salary: 11000,
+// });
